@@ -1,0 +1,16 @@
+img {
+    max-height: 200px;
+    max-width: 200px;
+    /* box-shadow: 2px 2px 2px gray; */
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px gray;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.newImages {
+    margin-bottom: 50px;
+}

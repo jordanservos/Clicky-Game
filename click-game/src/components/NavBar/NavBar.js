@@ -5,8 +5,8 @@ function NavBar(props) {
 
     return (
 
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">Pokemon Clicky Game</a>
+<nav className="navbar navbar-light bg-light">
+  <a className="navbar-brand" href="#">Pokemon Clicky Game</a>
 </nav>
 
     );
