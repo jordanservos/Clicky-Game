@@ -10,10 +10,12 @@ class App extends Component {
     score: 0,
     topScore: 0,
     imagesSelected: [],
-    alert: "Click a Pokemon to get started!",
+    alert: "Click on different Pokemon images each time to earn points! Repeat click and you LOSE!",
   };
 
-  //Create function for image clikcs
+  //Create function for image clicks
+
+  // console.log("The Score is: ", score);
 
   handleImageClick = event => {
     console.log("CLICKED");
@@ -27,7 +29,7 @@ class App extends Component {
       this.setState({
         score: 0,
         imagesSelected: [],
-        alert: "You already cliked that one!",
+        alert: "You already cliked that one! Start again...",
       });
     } else {
       // capture id and pass to imageID if clicked for first time
@@ -47,6 +49,7 @@ class App extends Component {
           alert: "Great selection!",
           score: this.state.score + 1,
         });
+        console.log(this.state.score, "this works!")
       }
     }
   };
@@ -55,7 +58,7 @@ class App extends Component {
     return (
       <>
         <NavBar />
-        <Score />
+        <Score alert={this.state.alert} score={this.state.score} topScore={this.state.topScore} />
         <ImageHolder handleImageClick={this.handleImageClick} />
       </>
     );

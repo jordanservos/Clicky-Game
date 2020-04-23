@@ -1,3 +1,23 @@
 .jumbotron {
     height: 300px;
+    background-image: url(../../assets/images/pwall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 2px gray;
+}
+
+#score {
+    text-shadow: 2px 2px 2px white !important;
+}
+
+#top-score {
+    text-shadow: 2px 2px 2px white !important;
+}
+
+#alert {
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
 }

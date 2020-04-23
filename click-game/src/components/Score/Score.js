@@ -5,12 +5,12 @@ function Score(props) {
 
     return (
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container text-center">
-    <h3 class="display-4">Your Score: {props.score}</h3>
-    <h3 class="display-4">Top Score: {props.topScore}</h3>
+<div className="jumbotron jumbotron-fluid">
+  <div className="container text-center">
+    <h3 className="display-4" id="score">Your Score: {props.score}</h3>
+    <h4 className="display-5" id="top-score">Top Score: {props.topScore}</h4>
     <hr></hr>
-    <p>Click on different Pokemon images each time to earn points! Repeat click and you LOSE!</p><br></br>
+    <p id="alert">{props.alert}</p><br></br>
   
   </div>
 </div>

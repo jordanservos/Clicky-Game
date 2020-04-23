@@ -132,8 +132,15 @@ function ImageHolder(props) {
   let newImages = Shuffle(imageArray);
 
   return (
+
+
+
     <main className="newImages">
-      <div className="container text-center">{newImages}</div>
+      <div className="container text-center">
+          <h2>{props.alert}</h2>
+          {newImages}
+      
+      </div>
     </main>
   );
 }
